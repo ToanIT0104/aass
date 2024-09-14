@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murach's Survey</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="logo">
+  <img src="images/murach.jpg" alt="Murach Logo">
+</div>
+<h2>Survey</h2>
+<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+<h3>Your information:</h3>
+<form action="emailList" method="post">
+  <input type="hidden" name="action" value="add">
+  <div class="email">
+
+    <label>First Name</label>
+    <input type="text"  name="firstName" required><br>
+
+    <label>Last Name</label>
+    <input type="text" name="lastName" required><br>
+
+    <label>Email</label>
+    <input type="email" name="email" required><br>
+
+    <label>Date of Birth</label>
+    <input type="date" name="date" required><br>
+  </div>
+
+  <h3>How did you hear about us?</h3>
+  <div>
+    <input type="radio" name="hear" value="Search engine" required>
+    <label>Search engine</label>
+
+    <input type="radio" name="hear" value="Word of mouth" required>
+    <label>Word of mouth</label>
+
+    <input type="radio" name="hear" value="Social media" required>
+    <label>Social Media</label>
+
+    <input type="radio" name="hear" value="Other" required>
+    <label>Other</label>
+  </div>
+
+  <h3>Would you like to receive announcements about new CDs and special offers?</h3>
+  <div>
+    <input type="checkbox" name="receive" value="YES, I'd like that">
+    <label>YES, I'd like that.</label><br>
+
+    <input type="checkbox" name="receive" value="YES, please send me email announcements">
+    <label>YES, please send me email announcements.</label><br>
+  </div>
+
+  <div>
+    <label>Please contact me by:</label>
+    <select name="contact" required>
+      <option value="" disabled selected>Email or postal email</option>
+      <option value="Email">Email</option>
+      <option value="Postal mail">Postal mail</option>
+    </select><br>
+  </div>
+
+  <label>&nbsp;</label>
+
+  <input type="submit" value="Join Now" id="submit">
+
+</form>
+</body>
+</html>
